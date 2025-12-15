@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="flex-col  min-h-[70vh] md:flex-row">
+        <div id="logo">Logo</div>
+        <!--hamburger menu-->
+         <div id="hambuurger" class="hamburger-menu  md:hidden absolute right-2  top-2 cursor-pointer hover:text-black  hover:font-bold transition-all duration-300">
+            <i class="fas fa-bars text-2xl  "></i>
+
+        </div>
+        <div id="menu "class="nav-links  flex justify-center items-center  md:static absolute bg-gray-900 md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:top-0 top-12 md:h-auto h-[calc(100vh-70px)] md:flex  hidden h-[12%]">
+            <ul class="flex-col min-h-[12%] md:flex md:flex-row md:space-x-6">
+                <li><a href="">Home</a></li>
+                <li><a href="#ourOffering">Our Offering</a></li>
+                <li><a href="#ourTeam">Our Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="slider-container">
+        <div class="slider">
+            <img src="https://picsum.photos/id/1015/800/400" alt="Image 1">
+            <img src="https://picsum.photos/id/1016/800/400" alt="Image 2">
+            <img src="https://picsum.photos/id/1018/800/400" alt="Image 3">
+            <img src="https://picsum.photos/id/1019/800/400" alt="Image 4">
+            <img src="https://picsum.photos/id/1020/800/400" alt="Image 5">
+        </div>
+        <button class="prev-btn">&lt;</button>
+        <button class="next-btn">&gt;</button>
+    </div>
+    <!-- social icons -->
+    <div class="social-icons">
+        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    </div>
+
+
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- -cards -->
+    <h2 id="ourOffering" class="price-heading">our offering</h2>
+    <div class="price-container">
+        <div class="price-card">
+            <h2 class="price-title">Basic</h2>
+            <p class="price-amount">$9.99/month</p>
+            <ul class="price-features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <button class="price-button">Choose Plan</button>
+        </div>
+        <div class="price-card">
+            <h2 class="price-title">Standard</h2>
+            <p class="price-amount">$19.99/month</p>
+            <ul class="price-features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+            </ul>
+            <button class="price-button">Choose Plan</button>
+        </div>
+        <div class="price-card">
+            <h2 class="price-title">Premium</h2>
+            <p class="price-amount">$29.99/month</p>
+            <ul class="price-features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+                <li>Feature 4</li>
+                <li>Feature 5</li>
+            </ul>
+            <button class="price-button">Choose Plan</button>   
+        </div>
+    </div>
+   <!-- team -->
+    <h2 id="ourTeam" class="team-heading">our team</h2>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Team Member 1" class="team-photo">
+            <h3 class="team-name">John Doe</h3>
+            <p class="team-role">CEO</p>
+        </div>
+        <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Team Member 2" class="team-photo">
+            <h3 class="team-name">Jane Smith</h3>
+            <p class="team-role">CTO</p>
+        </div>
+        <div class="team-member">
+            <img src="https://randomuser.me/api/portraits/men/56.jpg" alt="Team Member 3" class="team-photo">
+            <h3 class="team-name">Mike Johnson</h3>
+            <p class="team-role">CFO</p>
+        </div>
+    </div>
+    <!-- -contact us -->
+    <div id="contact" class="container mx-auto px-4 py-16 flex justify-center items-center min-h-screen">
+        <div class="form-container">
+            <div class="w-full max-w-lg">
+                <div class="form bg-gray-800 bg-opacity-50 backdrop-blur-md rounded-lg p-8 shadow-lg">
+                    <h1 class="text-4xl font-bold mb-8 text-center">Contact Us</h1>
+                    <form id="contact-form" novalidate>
+                        <div class="mb-4">
+                            <label for="name" class="block text-sm font-medium mb-2">Name</label>
+                            <input type="text" id="name" name="name"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+                                required>
+                            <p class="text-red-500 text-xs italic mt-2 hidden">Please enter your name.</p>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-sm font-medium mb-2">Email</label>
+                            <input type="email" id="email" name="email"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+                                required>
+                            <p class="text-red-500 text-xs italic mt-2 hidden">Please enter a valid email address.</p>
+                        </div>
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium mb-2">Message</label>
+                            <textarea id="message" name="message" rows="4"
+                                class="w-full bg-gray-700 border border-gray-600 rounded-md py-2 px-3 focus:outline-none focus:border-indigo-500"
+                                required></textarea>
+                            <p class="text-red-500 text-xs italic mt-2 hidden">Please enter a message.</p>
+                        </div>
+                        <div class="flex justify-center">
+                            <button type="submit"
+                                class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-6 rounded-lg focus:outline-none focus:shadow-outline transform transition-transform duration-300 hover:scale-105">
+                                Submit
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-container text-white py-12 px-4">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-xl font-bold mb-4">About Us</h3>
+                <p class="text-gray-400">We are a team of passionate developers building modern web applications.</p>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Resources</h3>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-indigo-400 transition-colors">Terms of Service</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xl font-bold mb-4">Connect With Us</h3>
+                <div class="flex space-x-4">
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="mt-8 pt-8 border-t border-gray-700 text-center">
+            <p>&copy; <span id="year"></span> sekouti abdelaziz. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
