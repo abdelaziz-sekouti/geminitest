@@ -14,14 +14,14 @@
 </head>
 
 <body class="bg-gray-900 text-white pb-0 m-0 overflow-x-hidden">
-    <header class="flex-col  min-h-[70vh] md:flex-row">
+    <header class="flex-col  md:flex-row">
         <div id="logo">Logo</div>
         <!--hamburger menu-->
          <div id="hambuurger" class="hamburger-menu  md:hidden absolute right-2  top-2 cursor-pointer hover:text-black  hover:font-bold transition-all duration-300">
             <i class="fas fa-bars text-2xl  "></i>
 
         </div>
-        <div id="menu "class="nav-links  flex justify-center items-center  md:static absolute bg-gray-900 md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:top-0 top-7 md:h-auto h-[calc(100vh-70px)] md:flex  hidden h-[12%]">
+        <div id="menu "class="nav-links flex justify-center items-evenly  md:static md:justify-center md:items-center absolute bg-gray-900 md:bg-transparent w-full left-0 md:w-auto md:py-0 py-4 md:top-0 top-7 md:h-auto h-[calc(100vh-70px)] md:flex  hidden">
             <ul class="flex-col min-h-[12%] md:flex md:flex-row md:space-x-6">
                 <li><a href="">Home</a></li>
                 <li><a href="#ourOffering">Our Offering</a></li>
@@ -30,6 +30,21 @@
             </ul>
         </div>
     </header>
+    <!-- heroe -->
+
+    <div class="heroe relative flex justify-center items-center md:h-screen overflow-hidden">
+        <video src="./videos/17916042-uhd_3840_2160_30fps.mp4" autoplay loop muted class="w-full absolute top-0 left-0 z-0"></video>
+        <div class="heroe-content flex flex-col justify-center items-center bg-black bg-opacity-50 h-screen w-full pb-8 overflow-hidden absolute z-10">
+           
+            <h1 class="heroe-title text-3xl md:text-5xl font-extrabold mb-2">Welcome to Our Website</h1>
+            <p class="heroe-subtitle">We provide the best services for you</p>
+            <a href="#contact" class="heroe-button px-2 py-1 rounded text-xl md:text-2xl mt-2 transition-all ease-in-out delay-150 bg-blue-500 hover:-translate-y-2 hover:scale-110 hover:bg-indigo-500 duration-300">Contact Us</a>
+             
+        </div>
+    </div>
+
+    <!-- slider -->
+    
     <div class="slider-container">
         <div class="slider">
             <img src="https://picsum.photos/id/1015/800/400" alt="Image 1">
@@ -42,13 +57,14 @@
         <button class="next-btn">&gt;</button>
     </div>
     <!-- social icons -->
+    
+
     <div class="social-icons">
         <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
         <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
     </div>
-
 
     <div class="background">
         <span></span>
